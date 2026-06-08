@@ -30,13 +30,14 @@ If you don't have Python installed, you'll need it first.
 
 2. Create a Virtual Environment A virtual environment keeps the project's packages safely isolated from your main computer.
    Windows: 
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate
-   Mac/Linux: 
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+         ```bash
+         python -m venv venv
+         venv\Scripts\activate
+
+   Mac/Linux:
+         ```bash
+         python3 -m venv venv
+         source venv/bin/activate
 
 (You should now see (venv) at the start of your terminal line).
 
