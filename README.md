@@ -74,6 +74,7 @@ You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com
 
 ## 🎮 Step 4: Run the Bot!
    With your virtual environment activated, run the script:
+      
       ```bash
       python bot.py
 
