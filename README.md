@@ -58,11 +58,11 @@ Because API keys act like passwords, we use a .env file to keep them safe. The .
       ```bash
       GEMINI_API_KEY="paste_your_gemini_api_key_here"
 
-      You can get a Gemini API key from Google AI Studio.
+      You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/api-keys).
 
 3. Add Your YouTube Credentials:
 
-   Go to the Google Cloud Console.
+   Go to the [Google Cloud Console](https://console.cloud.google.com/).
 
    Enable the YouTube Data API v3.
 
@@ -75,8 +75,8 @@ Because API keys act like passwords, we use a .env file to keep them safe. The .
 ## 🎮 Step 4: Run the Bot!
    With your virtual environment activated, run the script:
 
-      ```bash
-      python bot.py
+         ```bash
+         python bot.py
 
 1. Authenticate: A web browser will pop up asking you to log into the YouTube account that is hosting the stream. Grant the necessary permissions. (This generates a token.pickle file so you don't have to log in every time).
 
