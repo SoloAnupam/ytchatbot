@@ -30,16 +30,19 @@ If you don't have Python installed, you'll need it first.
 
 2. Create a Virtual Environment A virtual environment keeps the project's packages safely isolated from your main computer.
    Windows: 
+   ```bash
    python -m venv venv
    venv\Scripts\activate
    Mac/Linux: 
+   ```bash
    python3 -m venv venv
    source venv/bin/activate
 
-   (You should now see (venv) at the start of your terminal line).
+(You should now see (venv) at the start of your terminal line).
 
 3. Install the Required Packages:
 
+   ```bash
    pip install -r requirements.txt
 
 ## 🔒 Step 3: Configure API Keys Safely
@@ -51,6 +54,7 @@ Because API keys act like passwords, we use a .env file to keep them safe. The .
 2. Add Your Gemini Key:
    Open the .env file in any text editor and paste your API key like this:
 
+      ```bash
       GEMINI_API_KEY="paste_your_gemini_api_key_here"
 
       You can get a Gemini API key from Google AI Studio.
@@ -70,6 +74,7 @@ Because API keys act like passwords, we use a .env file to keep them safe. The .
 ## 🎮 Step 4: Run the Bot!
    With your virtual environment activated, run the script:
 
+   ```bash
    python bot.py
 
 1. Authenticate: A web browser will pop up asking you to log into the YouTube account that is hosting the stream. Grant the necessary permissions. (This generates a token.pickle file so you don't have to log in every time).
