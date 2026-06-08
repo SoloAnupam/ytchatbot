@@ -27,3 +27,62 @@ If you don't have Python installed, you'll need it first.
    ```bash
    git clone <YOUR_GITHUB_REPO_URL>
    cd <YOUR_REPO_NAME>
+
+2. Create a Virtual Environment A virtual environment keeps the project's packages safely isolated from your main computer.
+   Windows: 
+   python -m venv venv
+   venv\Scripts\activate
+   Mac/Linux: 
+   python3 -m venv venv
+   source venv/bin/activate
+
+   (You should now see (venv) at the start of your terminal line).
+
+3. Install the Required Packages:
+
+   pip install -r requirements.txt
+
+## 🔒 Step 3: Configure API Keys Safely
+Because API keys act like passwords, we use a .env file to keep them safe. The .gitignore file ensures this secret file is never uploaded to GitHub.
+
+1. Create the Environment File:
+   In the main project folder, create a new text file and name it exactly: .env
+
+2. Add Your Gemini Key:
+   Open the .env file in any text editor and paste your API key like this:
+
+      GEMINI_API_KEY="paste_your_gemini_api_key_here"
+
+      You can get a Gemini API key from Google AI Studio.
+
+3. Add Your YouTube Credentials:
+
+   Go to the Google Cloud Console.
+
+   Enable the YouTube Data API v3.
+
+   Go to Credentials, create an OAuth 2.0 Client ID (Desktop App).
+
+   Download the JSON file and rename it exactly to client_secrets.json.
+
+   Place client_secrets.json inside your project folder.
+
+## 🎮 Step 4: Run the Bot!
+   With your virtual environment activated, run the script:
+
+   python bot.py
+
+1. Authenticate: A web browser will pop up asking you to log into the YouTube account that is hosting the stream. Grant the necessary permissions. (This generates a token.pickle file so you don't have to log in every time).
+
+2. Enter URL: Paste your YouTube Live Stream URL when the terminal asks for it.
+
+3. Chat: Viewers can now type !bot How do I beat this boss? in your live chat, and the bot will reply directly!
+
+## ⚙️ Customization
+Inside bot.py, you can modify:
+
+USER_COOLDOWN = 30: Change the spam-prevention timeout (in seconds).
+
+MIN_POLL_INTERVAL = 20: Adjust how fast the bot fetches new chat messages.
+
+Prompt String: Search for Prompt = in the code to change the bot's personality from "Pro Gamer" to anything else!
