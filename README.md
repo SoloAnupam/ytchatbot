@@ -74,9 +74,8 @@ You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com
 
 ## 🎮 Step 4: Run the Bot!
    With your virtual environment activated, run the script:
-
-         ```bash
-         python bot.py
+      ```bash
+      python bot.py
 
 1. Authenticate: A web browser will pop up asking you to log into the YouTube account that is hosting the stream. Grant the necessary permissions. (This generates a token.pickle file so you don't have to log in every time).
 
