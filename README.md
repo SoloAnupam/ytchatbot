@@ -58,7 +58,7 @@ Because API keys act like passwords, we use a .env file to keep them safe. The .
       ```bash
       GEMINI_API_KEY="paste_your_gemini_api_key_here"
 
-      You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/api-keys).
+You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/api-keys).
 
 3. Add Your YouTube Credentials:
 
